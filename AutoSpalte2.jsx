@@ -29,7 +29,7 @@ Description:Set all columnwidths of a table numerically
 [Lang: DE, EN, IT]  
 [Getestet mit: InDesign CC]  
 [Creat: 19-03-21]  
-Bugs & Feedback : gerald{at}cuppascript{dot}com  
+Bugs & Feedback : https://github.com/gsingelmann/indd_autocolumn
 www.cuppascript.com  
 \* ---------------------------------------------------------------------------------- */ 
 
