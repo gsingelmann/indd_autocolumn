@@ -74,7 +74,12 @@ function autoSpalte(){
 	if (myTable.parent.constructor.name == "Cell") {
 		myFrameWidth = myFrame.width-myFrame.leftInset-myFrame.rightInset;
 	} else {
-		myFrameWidth = myFrame.geometricBounds[3] - myFrame.geometricBounds[1];
+		// 210208 Edit: try to get column width instead of simply textframe width
+		try {
+			myFrameWidth = myFrame.textFramePreferences.textColumnFixedWidth;
+		} catch(e) {
+			myFrameWidth = myFrame.geometricBounds[3] - myFrame.geometricBounds[1];
+		}
 	}
 
 	var nuColumnWidths = new Array();

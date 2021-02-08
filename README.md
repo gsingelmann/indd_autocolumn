@@ -44,6 +44,14 @@ Set the checkbox to store your widths inside the table-style assigned to the cur
 
 That allows you to retrieve the widths in another table of the same style.
 
+### Update 21-02-08
+
+The width is now taken from the width of the textcolumn instead of the width of the textframe boundaries.
+
+As a side effect the script now should handle rotated textframes as well.
+
+![rotated table](/Users/me/Dropbox/Documents/CS4 Scriptfolder/ public/autospalte/pix/210208autospalte.png)
+
 ## Installation
 
 ### Basic Installation
