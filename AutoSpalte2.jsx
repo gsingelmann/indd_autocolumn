@@ -47,9 +47,11 @@ www.cuppascript.com 
 
 
 
-if ( app.selection.length ) {
-	app.doScript( autoSpalte, undefined, undefined, UndoModes.ENTIRE_SCRIPT, localize(sAutoColumn) );
-}
+if ( app.selection.length ) 
+	app.doScript( autoSpalte, ScriptLanguage.JAVASCRIPT, undefined, UndoModes.ENTIRE_SCRIPT, localize(sAutoColumn) );
+else
+	alert(localize(sAutoColumn) + "\n" + localize(sNoSelection));
+
 function autoSpalte(){
 	// ----------------------------------------------------------------------------------
 	//	Find table in selection
